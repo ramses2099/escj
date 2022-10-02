@@ -1,0 +1,24 @@
+{
+  "name": "escj",
+  "version": "1.0.0",
+  "description": "entity componet system in javascript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramses2099/escj.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramses2099/escj/issues"
+  },
+  "homepage": "https://github.com/ramses2099/escj#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
