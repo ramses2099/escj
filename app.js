@@ -1,3 +1,4 @@
+import { ECS } from "./Ecs.js";
 
 //canvas element
 /** @type {HTMLCanvasElement} */
@@ -17,15 +18,22 @@ window.addEventListener('resize', function(){
 });
 
 
-
-
 //*-------------------------------------------------------------------------------------*//
 //*----------------------------------GAME LOOP------------------------------------------*//
 //*-------------------------------------------------------------------------------------*//
 
 //setinitialState
 function setInitState(){
+    let com1 = new ECS.Components.Health();
+    let com2 = new ECS.Components.Position({x:49,y:89});
+    //
+    let e = new ECS.Entity(null);
+    e.addByArray([com1,com2]);
 
+    let e2 = new ECS.Entity("Player", [com1, com2, new ECS.Components.Dimension()]);
+
+    console.log(JSON.stringify(e, null, 4));
+    console.log(JSON.stringify(e2, null, 4));
 
 }
 
